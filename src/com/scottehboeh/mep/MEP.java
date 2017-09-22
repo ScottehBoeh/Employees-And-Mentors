@@ -130,7 +130,8 @@ public class MEP {
 					System.out.println("Employee Name: " + theEmployee.getFullName());
 					System.out.println("Employee ID: " + theEmployee.getEmployeeID());
 					System.out.println("Employee Hours Worked: " + theEmployee.getHoursWorked());
-					System.out.println("Employee Hourly Rate: £" + theEmployee.getHourlyRate());
+					System.out.println("Employee Hourly Rate: Â£" + theEmployee.getHourlyRate());
+					System.out.println("Employee Salary: Â£" + theEmployee.getCurrentSalary());
 					
 					/** If the employee has a mentor, display it's information too! */
 					if(theEmployee.getMentorID() != null){
@@ -251,7 +252,7 @@ public class MEP {
 				System.out.println("Employee: " + employeeList.get(i).getFullName() 
 						+ " | " + employeeList.get(i).getHoursWorked()
 						+ " | " + employeeList.get(i).getHourlyRate()
-						+ " | £" + employeeList.get(i).getCurrentSalary());
+						+ " | Â£" + employeeList.get(i).getCurrentSalary());
 			}
 
 			/** End Formatting */
