@@ -9,8 +9,8 @@ import com.scottehboeh.mep.utilities.EmpHelper;
 
 public class MEP {
 	
-	public static boolean exit = false;
-	public static Scanner scannerInstance = new Scanner(System.in);
+	public static boolean exit = false; /** Exit Boolean */
+	public static Scanner scannerInstance = new Scanner(System.in); /** Scanner Instance */
 
 	/**
 	 * Main Program Method
@@ -33,6 +33,7 @@ public class MEP {
 			
 			System.out.println("9 - Quit");
 			
+			/** Switch Statement for the next Integer input from User */
 			switch(scannerInstance.nextInt()){
 				
 				/** Create new Employee */
@@ -116,7 +117,7 @@ public class MEP {
 		
 		/** Fetch the employee entity from the saved employees and display to the user */
 		try {
-			
+			/** If the given Employee ID is Valid */
 			if(EmpHelper.doesEmployeeExist(givenEmployeeID)){
 				
 				try {
@@ -150,6 +151,7 @@ public class MEP {
 				
 			} else {
 				
+				/** Else, Inform the user that the given Employe ID was Invalid */
 				System.out.println("That employee doesn't exist!");
 				
 			}
