@@ -17,7 +17,7 @@ import com.scottehboeh.mep.entities.EntityEmployee;
 
 public class EmpHelper {
 	
-	public static String empDir = "employees/";
+	public static final String empDir = "employees/";
 	static Gson gson = new GsonBuilder().setPrettyPrinting().create();
 	
 	/**
