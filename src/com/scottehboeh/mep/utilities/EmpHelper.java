@@ -119,15 +119,18 @@ public class EmpHelper {
 	public static void deleteEmployeeFromUUID(String givenEmployeeID) throws IOException {
 
         /** Get Employee File */
-        File clanFile = new File(empDir + givenEmployeeID + ".json");
+        File employeeFile = new File(empDir + givenEmployeeID + ".json");
 
         /** If clan file doesn't exist, create one */
-        if (clanFile.exists()) {
-            PrintWriter writer = new PrintWriter(clanFile);
+        if (employeeFile.exists()) {
+        	
+            PrintWriter writer = new PrintWriter(employeeFile);
             writer.print("");
             writer.close();
             
-            clanFile.delete();
+            /** Delete the Employee File */
+            employeeFile.delete();
+            
         }
 
     }
